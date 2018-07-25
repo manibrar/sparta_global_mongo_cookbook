@@ -18,8 +18,5 @@ describe 'mongo::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
-    it 'should install mongodb' do
-        expect(chef_run).to include_recipe("mongodb")
-      end
   end
 end

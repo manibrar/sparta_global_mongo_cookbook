@@ -25,3 +25,10 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
+  - name: mongodb
+    run_list:
+      - recipe[mongo::mongodb]
+    verifier:
+      inspec_tests:
+        - test/integration/mongodb
+    attributes:
